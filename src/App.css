@@ -1,0 +1,67 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+/* App.css */
+.banner {
+  background-color: #007bff; /* Cambia el color de fondo a tu elección */
+  color: #fff; /* Cambia el color del texto a tu elección */
+  text-align: center;
+  padding: 1rem; /* Añade espaciado interior al banner */
+  font-size: 1.5rem; /* Cambia el tamaño de fuente a tu elección */
+}
+
+/* Estilos adicionales según tus preferencias */
+
+
+.personajes-container {
+  display: flex;
+  flex-wrap: wrap; /* Esto permite que los elementos se envuelvan en filas */
+  justify-content: space-between; /* Distribuir los elementos uniformemente en las filas */
+  /* Otros estilos personalizados según tus necesidades */
+}
+
+.personaje-card {
+  width: calc(20% - 10px); /* Establece el ancho deseado para cada tarjeta y un margen */
+  margin: 10px; /* Margen entre las tarjetas */
+  /* Otros estilos personalizados para las tarjetas */
+}
+
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
